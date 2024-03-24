@@ -1,0 +1,166 @@
+﻿@model FinalProject.Models.StylistAccount
+
+@{
+    ViewData["Title"] = "Join";
+    Layout = "~/Views/Shared/_AppLayout2.cshtml";
+}
+<section class="site-hero inner-page overlay" style="background-image: url(/images/join_new.jpg)" data-stellar-background-ratio="0.5">
+    <div class="container">
+        <div class="row site-hero-inner justify-content-center align-items-center">
+            <div class="col-md-10 text-center" data-aos="fade">
+                <h1 class="heading mb-3">Become a Stylist</h1>
+                <ul class="custom-breadcrumbs mb-4">
+                    <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li>&bullet;</li>
+                    <li>Join</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <a class="mouse smoothscroll" href="#next">
+        <div class="mouse-icon">
+            <span class="mouse-wheel"></span>
+        </div>
+    </a>
+</section>
+<!-- END section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-12 order-lg-1" data-aos="fade-up">
+                <h2 class="heading" style="text-align:center;">Stylist Program Overview</h2>
+                <p class="mb-4">
+                    Join the StyleSense Stylist Program and take your styling career to the next level! Our program is designed for experienced stylists who want to grow their business and expand their reach. As a member of our program, you'll gain access to exclusive resources and tools, that will help you streamline your workflow and enhance your client experience. You'll also have the opportunity to connect with other stylists in our network, collaborate on projects, and learn from each other's experiences. Plus, we'll promote your services to our growing community of fashion-forward clients, giving you more exposure and opportunities to showcase your talent. Whether you're looking to build your brand, expand your clientele, or take on new challenges, the StyleSense Stylist Program can help you achieve your goals.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section contact-section" id="next">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
+                <div class="bg-white p-md-5 p-4 mb-5 border">
+                    @using (Html.BeginForm("Create", "Join", FormMethod.Post))
+                    {
+                        <h2 class="heading">Application</h2>
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <label asp-for="FirstName">First Name</label> <br />
+                                <input asp-for="FirstName" />
+                                <br /> <span asp-validation-for="FirstName" class="error-text text-error"></span>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label asp-for="LastName">Last Name</label> <br />
+                                <input asp-for="LastName" />
+                                <br /> <span asp-validation-for="LastName" class="error-text text-error"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <label asp-for="Username">Username</label> <br />
+                                <input asp-for="Username" />
+                                <br /> <span asp-validation-for="Username" class="error-text text-error"></span>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label asp-for="Password">Password</label> <br />
+                                <input asp-for="Password" type="password" />
+                                <br /> <span asp-validation-for="Password" class="error-text text-error"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <label asp-for="Email">Email</label> <br />
+                                <input asp-for="Email" />
+                                <br /> <span asp-validation-for="Email" class="error-text text-error"></span>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label asp-for="Phone">Phone</label> <br />
+                                <input asp-for="Phone" />
+                                <br /> <span asp-validation-for="Phone" class="error-text text-error"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <label asp-for="Gender">Gender</label> <br />
+                                @Html.RadioButtonFor(m => m.Gender, "Female", new { id = "Gender_Female" }) @Html.Label("Female")
+                                @Html.RadioButtonFor(m => m.Gender, "Male", new { id = "Gender_Male" }) @Html.Label("Male")
+                            </div>
+                            <div class="col-md-6 form-group">
+                                @Html.Label("Date of Birth") <br>
+                                <input type="date" id="DOB" name="DOB" asp-for="DateOfBirth">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <label asp-for="YearsOfExperience">Years of Experience</label> <br />
+                                <input asp-for="YearsOfExperience" />
+                                <br /> <span asp-validation-for="YearsOfExperience" class="error-text text-error"></span>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                @Html.Label("Portfolio or Resume")
+                                <input type="file" id="file" name="file" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <label asp-for="LicenseNumber">License or Certification Number</label> <br />
+                                <input asp-for="LicenseNumber" />
+                                <br /> <span asp-validation-for="LicenseNumber" class="error-text text-error"></span>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label asp-for="PricesCharged">Prices Charged</label> <br />
+                                <input asp-for="PricesCharged" />
+                                <br /> <span asp-validation-for="PricesCharged" class="error-text text-error"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <label asp-for="AreasOfExpertise">Areas of Expertise</label> <br />
+                                @Html.TextAreaFor(m=>m.AreasOfExpertise)
+                                <br /> <span asp-validation-for="AreasOfExpertise" class="error-text text-error"></span>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label asp-for="Address">Address</label> <br />
+                                @Html.TextAreaFor(m=>m.Address)
+                                <br /> <span asp-validation-for="Address" class="error-text text-error"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input type="submit" value="Join Now!" class="btn-sm btn-primary text-white font-weight-bold">
+                            </div>
+                        </div>
+                        @Html.ValidationSummary(false, " ", new {@class="text-error"})
+                    }
+                </div>
+            </div>
+            <div class="col-md-5" data-aos="fade-up" data-aos-delay="200">
+                <div class="row">
+                    <div class="col-md-10 ml-auto contact-info">
+                        <p><span style="color:black;"> Experience & Qualifications </span></p>
+                        <p>
+                            <span style=" font-size: 18px; color:black; line-height:10px;">
+                                - Bachelor's degree in Fashion Design. <br />
+                                - 5 years of experience working as a fashion stylist for high-end fashion brands and publications. <br />
+                                - Expertise in wardrobe styling for editorial shoots, commercial campaigns, and red carpet events. <br />
+                                - Strong knowledge of current fashion trends, designers, and brands. <br />
+                                - Experience in personal shopping and styling for individual clients, including wardrobe consultations and closet organization. <br />
+                                - Strong communication and interpersonal skills. <br />
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+

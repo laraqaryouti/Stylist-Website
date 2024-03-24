@@ -1,0 +1,215 @@
+﻿
+@{
+    ViewData["Title"] = "About";
+    Layout = "~/Views/Shared/_AppLayout.cshtml";
+}
+
+<section class="site-hero inner-page overlay" style="background-image: url(/images/about_page.jpg)" data-stellar-background-ratio="0.5">
+    <div class="container">
+        <div class="row site-hero-inner justify-content-center align-items-center">
+            <div class="col-md-10 text-center" data-aos="fade">
+                <h1 class="heading mb-3">About Us</h1>
+                <ul class="custom-breadcrumbs mb-4">
+                    <li><a asp-action="Index" asp-controller="Home">Home</a></li>
+                    <li>&bullet;</li>
+                    <li>About</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <a class="mouse smoothscroll" href="#next">
+        <div class="mouse-icon">
+            <span class="mouse-wheel"></span>
+        </div>
+    </a>
+</section>
+<!-- END section -->
+
+<section class="py-5 bg-light" id="next">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-12 col-lg-7 ml-auto order-lg-2 position-relative mb-5" data-aos="fade-up">
+                <figure class="img-absolute">
+                    <img src="/images/welcome2.jpg" alt="Free Website Template by Templateux" class="img-fluid">
+                </figure>
+                <img src="/images/welcome1.jpg" alt="Image" class="img-fluid rounded">
+            </div>
+            <div class="col-md-12 col-lg-4 order-lg-1" data-aos="fade-up">
+                <h2 class="heading">Welcome!</h2>
+                <p class="mb-4">Welcome to our online fashion stylist website! We are here to help you elevate your personal style and create fashionable looks that make you feel confident and stylish. Our website offers a range of services and resources to assist you in achieving your fashion goals.</p>
+                <p class="mb-4">
+                    At our website, you'll find a range of services and resources designed to assist you in achieving your fashion goals. From personalized styling sessions to curated fashion guides, we're here to provide you with the tools you need to enhance your wardrobe and express your unique sense of style.
+                </p>
+                <p><a asp-action="Services" asp-controller="StyleSense" class="btn btn-primary text-white py-2 mr-3">Our Services</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div class="container section">
+
+    <div class="row justify-content-center text-center mb-5">
+        <div class="col-md-7 mb-5">
+            <h2 class="heading" data-aos="fade-up">Meet our creators</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="block-2">
+                <div class="flipper">
+                    <div class="front" style="background-image: url(/images/person_3.jpg);">
+                        <div class="box">
+                            <h2>Will Peters</h2>
+                            <p>Creative Director</p>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <!-- back content -->
+                        <blockquote>
+                            <p>&ldquo;Style is the only thing you can't buy. It's not in a shopping bag, a label, or a price tag. It's something reflected from our soul to the outside world.&rdquo;</p>
+                        </blockquote>
+                        <div class="author d-flex">
+                            <div class="image mr-3 align-self-center">
+                                <img src="/images/person_3.jpg" alt="">
+                            </div>
+                            <div class="name align-self-center">Will Peters <span class="position">Creative Director</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- .flip-container -->
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="block-2">
+                <!-- .hover -->
+                <div class="flipper">
+                    <div class="front" style="background-image: url(/images/person_1.jpg);">
+                        <div class="box">
+                            <h2>Cecilia Williams</h2>
+                            <p>CEO</p>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <!-- back content -->
+                        <blockquote>
+                            <p>&ldquo;Fashion is about dressing according to what's fashionable. Style is more about being yourself.&rdquo;</p>
+                        </blockquote>
+                        <div class="author d-flex">
+                            <div class="image mr-3 align-self-center">
+                                <img src="/images/person_1.jpg" alt="">
+                            </div>
+                            <div class="name align-self-center">Jane Williams <span class="position">CEO</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- .flip-container -->
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="block-2">
+                <div class="flipper">
+                    <div class="front" style="background-image: url(/images/person_2.jpg);">
+                        <div class="box">
+                            <h2>Jeffrey Neddery</h2>
+                            <p>Fashion Director</p>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <!-- back content -->
+                        <blockquote>
+                            <p>&ldquo;Style is not just about what you wear, it's about how you carry yourself and how you make others feel.&rdquo;</p>
+                        </blockquote>
+                        <div class="author d-flex">
+                            <div class="image mr-3 align-self-center">
+                                <img src="/images/person_2.jpg" alt="">
+                            </div>
+                            <div class="name align-self-center">Jeffrey Neddery <span class="position">Fashion Director</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- .flip-container -->
+        </div>
+    </div>
+</div>
+<!-- END .block-2 -->
+<section class="section slider-section bg-light">
+    <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+            <div class="col-md-7">
+                <h2 class="heading" data-aos="fade-up">Glimpse of Our Work</h2>
+                <p data-aos="fade-up" data-aos-delay="100"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="home-slider major-caousel owl-carousel mb-5" data-aos="fade-up" data-aos-delay="200">
+                    <div class="slider-item">
+                        <a href="/images/sc1-n.jpg" data-fancybox="images" data-caption="Caption for this image"><img src="/images/sc1-n.jpg" alt="Image placeholder" class="img-fluid" style="height: 700px; width: 1123px;"></a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/images/sc2.jpg" data-fancybox="images" data-caption="Caption for this image"><img src="/images/sc2.jpg" alt="Image placeholder" class="img-fluid" style="height: 700px; width: 1123px;"></a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/images/sc3.jpg" data-fancybox="images" data-caption="Caption for this image"><img src="/images/sc3.jpg" alt="Image placeholder" class="img-fluid" style="height: 700px; width: 1123px;"></a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/images/sc4.jpg" data-fancybox="images" data-caption="Caption for this image"><img src="/images/sc4.jpg" alt="Image placeholder" class="img-fluid" style="height: 700px; width: 1123px;"></a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/images/sc5.jpg" data-fancybox="images" data-caption="Caption for this image"><img src="/images/sc5.jpg" alt="Image placeholder" class="img-fluid" style="height: 700px; width: 1123px;"></a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/images/sc6-n.jpg" data-fancybox="images" data-caption="Caption for this image"><img src="/images/sc6-n.jpg" alt="Image placeholder" class="img-fluid" style="height: 700px; width: 1123px;"></a>
+                    </div>
+                    <div class="slider-item">
+                        <a href="/images/sc7-n.jpg" data-fancybox="images" data-caption="Caption for this image"><img src="/images/sc7-n.jpg" alt="Image placeholder" class="img-fluid" style="height: 700px; width: 1123px;"></a>
+                    </div>
+                </div>
+                <!-- END slider -->
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- END section -->
+
+<div class="section">
+    <div class="container">
+
+        <div class="row justify-content-center text-center mb-5">
+            <div class="col-md-7 mb-5">
+                <h2 class="heading" data-aos="fade">History</h2>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="timeline-item" date-is='2022' data-aos="fade">
+                    <h3>Expansion of Services</h3>
+                    <p>Based on feedback from clients and market research, StyleSense expands its services to include beauty consultations, personalized shopping experiences, and curated fashion collections. The website also partners with fashion brands and designers to offer exclusive discounts and promotions to its clients.</p>
+                </div>
+
+                <div class="timeline-item" date-is='2020' data-aos="fade">
+                    <h3>Launch of StyleSense</h3>
+                    <p>
+                        After months of hard work, StyleSense is launched! The website offers a range of services, including virtual styling consultations, personalized fashion recommendations, and style inspiration. Cecilia also recruits a team of skilled fashion stylists and other fashion experts to join the platform.
+                    </p>
+                </div>
+
+                <div class="timeline-item" date-is='2018' data-aos="fade">
+                    <h3>The Idea is Born</h3>
+                    <p>
+                        The idea for an online fashion stylist website is born out of a passion for fashion and a desire to help people elevate their personal style. The founder, Cecilia, envisions a platform that offers fashion services and resources to assist individuals in achieving their fashion goals.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+

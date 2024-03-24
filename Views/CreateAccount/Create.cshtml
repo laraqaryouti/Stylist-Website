@@ -1,0 +1,120 @@
+﻿@model FinalProject.Models.UserAccount
+
+@{
+    ViewData["Title"] = "Create Account";
+    Layout = "~/Views/Shared/_AppLayout.cshtml";
+}
+<section class="site-hero inner-page overlay" style="background-image: url(/images/createacc_page.jpg)" data-stellar-background-ratio="0.5">
+    <div class="container">
+        <div class="row site-hero-inner justify-content-center align-items-center">
+            <div class="col-md-10 text-center" data-aos="fade">
+                <h1 class="heading mb-3">Create Account</h1>
+                <ul class="custom-breadcrumbs mb-4">
+                    <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li>&bullet;</li>
+                    <li>Create Account</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <a class="mouse smoothscroll" href="#next">
+        <div class="mouse-icon">
+            <span class="mouse-wheel"></span>
+        </div>
+    </a>
+</section>
+<!-- END section -->
+<section class="section pb-4">
+    <div class="container">
+        <div class="row check-availabilty" id="next">
+            <div class="block-32" data-aos="fade-up" data-aos-offset="-200">
+                @using (Html.BeginForm("Create", "CreateAccount", FormMethod.Post))
+                {
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label asp-for="FirstName">First Name</label> <br />
+                            <input asp-for="FirstName" />
+                            <br /> <span asp-validation-for="FirstName" class="error-text text-error"></span>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label asp-for="LastName">Last Name</label> <br />
+                            <input asp-for="LastName" />
+                            <br /> <span asp-validation-for="LastName" class="error-text text-error"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label asp-for="Username">Username</label> <br />
+                            <input asp-for="Username" />
+                            <br /> <span asp-validation-for="Username" class="error-text text-error"></span>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label asp-for="Password">Password</label> <br />
+                            <input type="password" asp-for="Password" />
+                            <br /> <span asp-validation-for="Password" class="error-text text-error"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label asp-for="Email">Email</label> <br />
+                            <input asp-for="Email" />
+                            <br /> <span asp-validation-for="Email" class="error-text text-error"></span>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label asp-for="Phone">Phone</label> <br />
+                            <input asp-for="Phone" />
+                            <br /> <span asp-validation-for="Phone" class="error-text text-error"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label asp-for="Gender">Gender</label> <br />
+                            @Html.RadioButtonFor(m => m.Gender, "Female", new { id = "G_Female" }) @Html.Label("Female")
+                            @Html.RadioButtonFor(m => m.Gender, "Male", new { id = "G_Male" }) @Html.Label("Male")
+                        </div>
+                        <div class="col-md-6 form-group">
+                            @Html.Label("Date of birth") <br>
+                            <input type="date" id="DOB" name="DOB" asp-for="DateOfBirth" >
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label asp-for="Budget">Budget</label> <br />
+                            <input asp-for="Budget" />
+                            <br /> <span asp-validation-for="Budget" class="error-text text-error"></span>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label asp-for="ClothingSize">Clothing Size</label> <br />
+                            <input asp-for="ClothingSize" />
+                            <br /> <span asp-validation-for="ClothingSize" class="error-text text-error"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            <label asp-for="Address">Address</label> <br />
+                            @Html.TextAreaFor(m=>m.Address)
+                            <br /> <span asp-validation-for="Address" class="error-text text-error"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <input type="submit" value="Create Account" class="btn-sm btn-primary text-white font-weight-bold" style="text-align:center;">
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-12 form-group test">
+                            <br /><br /> @Html.Label("Already have an account? Log in now!") <br />
+                            <a class="btn-sm btn-primary text-white py-2 mr-3">Login</a>
+                        </div>
+                    </div>
+                    @Html.ValidationSummary(false, " ", new {@class="text-error"})
+                }
+            </div>
+        </div>
+    </div>
+</section>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+

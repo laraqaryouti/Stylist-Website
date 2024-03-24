@@ -1,0 +1,331 @@
+﻿@model FinalProject.Models.Consultation
+@{
+    ViewData["Title"] = "Consultation";
+    Layout = "~/Views/Shared/_AppLayout.cshtml";
+}
+<section class="site-hero inner-page overlay" style="background-image: url(/images/sc7-n.jpg)" data-stellar-background-ratio="0.5">
+    <div class="container">
+        <div class="row site-hero-inner justify-content-center align-items-center">
+            <div class="col-md-10 text-center" data-aos="fade">
+                <h1 class="heading mb-3">Consultation</h1>
+                <ul class="custom-breadcrumbs mb-4">
+                    <li><a asp-action="Index" asp-controller="Home">Home</a></li>
+                    <li>&bullet;</li>
+                    <li>Consultation</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <a class="mouse smoothscroll" href="#next">
+        <div class="mouse-icon">
+            <span class="mouse-wheel"></span>
+        </div>
+    </a>
+</section>
+<!-- END section -->
+<section class="section blog-post-entry">
+    <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+            <div class="col-md-7">
+                <h2 class="heading" data-aos="fade-up">Consultation Services</h2>
+                <p data-aos="fade-up">Choose the consultation type that suits your needs and preferences. Our virtual, and in-person consultations offer personalized and professional advice on fashion, style, and wardrobe, tailored to your lifestyle and goals.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="media media-custom d-block mb-4 h-100">
+                    <a href="#" class="mb-4 d-block"><img src="/images/in_person.jpg" alt="Image placeholder" class="img-fluid"></a>
+                    <div class="media-body">
+                        <h2 class="mt-0 mb-3"><a href="#">In-Person Consultation</a></h2>
+                        <p>This type of consultation is conducted face-to-face and allows for a more hands-on approach to styling. It's a great option for those who prefer a more personalized experience and the ability to try on different outfits and accessories. Services such as Personal Fashion Advice, Color Analysis, Wardrobe Assessment, and Style Makeover can be done in person.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="200">
+                <div class="media media-custom d-block mb-4 h-100">
+                    <a href="#" class="mb-4 d-block"><img src="/images/virtual.jpg" alt="Image placeholder" class="img-fluid"></a>
+                    <div class="media-body">
+                        <h2 class="mt-0 mb-3"><a href="#">Virtual Consultation</a></h2>
+                        <p>This type of consultation is conducted remotely, usually through video chat or phone call. It's a great option for those who are unable to meet in person or prefer the convenience of receiving advice from the comfort of their own home. Services such as Personal Fashion Advice, Color Analysis, and Wardrobe Assessment can be done virtually.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section blog-post-entry bg-light" id="next">
+    <div class="container">
+        <h2 class="heading" data-aos="fade-up" style="text-align:center;">Get to know our stylists</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 post mb-5" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="media media-custom d-block mb-4 h-100">
+                    <div class="media-body">
+                        <span class="meta-post">Women's formal wear and red carpet looks</span>
+                        <h2 class="mt-0 mb-3"><a href="#">Samantha Jones</a></h2>
+                        <p>
+                            Over 10 years in the fashion industry, having worked with A-list celebrities and fashion brands <br />
+                            Samantha is a renowned stylist known for her impeccable taste and attention to detail. She has an eye for creating stunning red carpet looks and specializes in women's formal wear, making her clients feel confident and glamorous for any special occasion.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 post mb-5" data-aos="fade-up" data-aos-delay="200">
+                <div class="media media-custom d-block mb-4 h-100">
+                    <div class="media-body">
+                        <span class="meta-post">Men's casual and streetwear</span>
+                        <h2 class="mt-0 mb-3"><a href="#">David Smith</a></h2>
+                        <p>
+                            Fashion graduate with 5 years of experience in styling men's fashion <br />
+                            David is a trendsetter in the world of men's fashion. With his keen eye for detail and passion for streetwear, he helps his clients achieve a cool and effortless look. His laid-back yet stylish approach to fashion has earned him a loyal following of fashion-conscious men seeking a fresh and modern wardrobe.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 post mb-5" data-aos="fade-up" data-aos-delay="300">
+                <div class="media media-custom d-block mb-4 h-100">
+                    <div class="media-body">
+                        <span class="meta-post">Sustainable and ethical fashion</span>
+                        <h2 class="mt-0 mb-3"><a href="#">Emily Thompson</a></h2>
+                        <p>
+                            Certified sustainable fashion consultant with a background in fashion sustainability and eco-friendly practices <br />
+                            Emily is a dedicated advocate of sustainable and ethical fashion. She believes that fashion can be both stylish and responsible. With her expertise in sustainable fashion practices, she helps her clients make eco-friendly choices in their wardrobe while looking chic and conscious of the environment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 post mb-5" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="media media-custom d-block mb-4 h-100">
+                    <div class="media-body">
+                        <span class="meta-post"> Asian fashion and cultural fusion</span>
+                        <h2 class="mt-0 mb-3"><a href="#">Sofia Chen</a></h2>
+                        <p>
+                            Fashion influencer and blogger with a focus on Asian fashion and fusion styles <br />
+                            Sophia is a fashion enthusiast with a passion for Asian fashion and cultural fusion. She is known for her unique and creative styling, blending traditional Asian elements with contemporary fashion trends. Her fashion-forward approach and expertise in Asian fashion make her a go-to stylist for clients looking to infuse cultural influences into their wardrobe.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 post mb-5" data-aos="fade-up" data-aos-delay="200">
+                <div class="media media-custom d-block mb-4 h-100">
+                    <div class="media-body">
+                        <span class="meta-post">Men's formal wear and business attire</span>
+                        <h2 class="mt-0 mb-3"><a href="#">Carlos Rodriguez</a></h2>
+                        <p>
+                            Former fashion buyer for luxury menswear brands with 8 years of styling experience <br />
+                            Carlos is a seasoned stylist with a wealth of experience in men's formal wear and business attire. He has an in-depth understanding of fabrics, cuts, and fits, and knows how to create sophisticated and polished looks for any professional setting.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 post mb-5" data-aos="fade-up" data-aos-delay="300">
+                <div class="media media-custom d-block mb-4 h-100">
+                    <div class="media-body">
+                        <span class="meta-post">Boho-chic and bohemian fashion</span>
+                        <h2 class="mt-0 mb-3"><a href="#">Gabrielle Martinez</a></h2>
+                        <p>
+                            Fashion blogger and influencer with a focus on boho-chic styles <br />
+                            Gabrielle is a fashion blogger and influencer known for her love for boho-chic and bohemian fashion. She has a keen eye for eclectic prints, flowing fabrics, and unique accessories that capture the free-spirited and laid-back essence of boho fashion.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+            <div class="col-md-7">
+                <h2 class="heading" data-aos="fade-up">Choose the package that's right for you.</h2>
+                <p data-aos="fade-up" data-aos-delay="100">Our packages are designed to fit your unique style and needs. Whether you're looking for personalized wardrobe recommendations, in-depth fashion advice, or a complete style makeover, we have a package that's perfect for you. Check out our packages and see which one is the best fit for your fashion journey.</p>
+                <a asp-controller="StyleSense" asp-action="Services" class="btn btn-primary text-white py-2 mr-3">Read More</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section bg-light">
+
+    <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+            <div class="col-md-7">
+                <h2 class="heading" data-aos="fade">Our Prices</h2>
+                <p data-aos="fade">Discover our tailored pricing packages designed to enhance your style and elevate your wardrobe with expert styling guidance and personalized attention.</p>
+            </div>
+        </div>
+
+        <div class="site-block-half d-block d-lg-flex bg-white" data-aos="fade" data-aos-delay="100">
+            <a href="#" class="image d-block bg-image-2" style="background-image: url('/images/bp.jpg');"></a>
+            <div class="text">
+                <span class="d-block mb-4"><span class="display-4 text-primary">Up to $199</span> </span>
+                <h2 class="mb-4">Basic Packages</h2>
+                <p>
+                    - Personal Fashion Advice $99 <br />
+                    - Wardrobe Assessment $149 <br />
+                    - Color Analysis $79 <br />
+                    - Closet Organization $129 <br />
+                    - Special Event Styling $100 <br />
+                    - Style Makeover $199
+                </p>
+                <p><a href="#conform">Book Now</a></p>
+            </div>
+        </div>
+        <div class="site-block-half d-block d-lg-flex bg-white" data-aos="fade" data-aos-delay="200">
+            <a href="#" class="image d-block bg-image-2 order-2" style="background-image: url('/images/pp.jpg');"></a>
+            <div class="text order-1">
+                <span class="d-block mb-4"><span class="display-4 text-primary">Up to $350</span> </span>
+                <h2 class="mb-4">Deluxe Packages</h2>
+                <p>
+                    - Personal Fashion Advice $199 <br />
+                    - Wardrobe Assessment $249 <br />
+                    - Color Analysis $159 <br />
+                    - Closet Organization $229 <br />
+                    - Special Event Styling $250 <br />
+                    - Style Makeover $349
+                </p>
+                <p><a href="#conform">Book Now</a></p>
+            </div>
+        </div>
+        <div class="site-block-half d-block d-lg-flex bg-white" data-aos="fade" data-aos-delay="100">
+            <a href="#" class="image d-block bg-image-2" style="background-image: url('/images/dp.jpg');"></a>
+            <div class="text">
+                <span class="d-block mb-4"><span class="display-4 text-primary">Up to $500</span> </span>
+                <h2 class="mb-4">Permium Packages</h2>
+                <p>
+                    - Personal Fashion Advice $299 <br />
+                    - Wardrobe Assessment $349 <br />
+                    - Color Analysis $249 <br />
+                    - Closet Organization $349 <br />
+                    - Special Event Styling $360 <br />
+                    - Style Makeover $499
+                </p>
+                <p><a href="#conform">Book Now</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+            <div class="col-md-7">
+                <h2 class="heading" data-aos="fade-up">Discover your personal style</h2>
+                <p data-aos="fade-up" data-aos-delay="100">Unsure of your personal style? Take our quick and easy style quiz to assist us in creating a personalized consultation just for you.</p>
+                <button data-tf-popup="WIU3BsrK" data-tf-opacity="100" data-tf-hide-headers data-tf-size="50" data-tf-iframe-props="title=Personal Style Quiz" data-tf-transitive-search-params data-tf-medium="snippet" data-tf-hidden="total_scores=" style="all:unset;font-family:Helvetica,Arial,sans-serif;display:inline-block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background-color:#CB732B;color:#fff;font-size:20px;border-radius:25px;padding:0 33px;font-weight:bold;height:50px;cursor:pointer;line-height:50px;text-align:center;margin:0;text-decoration:none;">Take Quiz Now!</button><script src="//embed.typeform.com/next/embed.js"></script>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section pb-4 bg-light" id="conform">
+    <div class="container form2">
+        <div class="row check-availabilty" id="next">
+            <div class="col-md-7 bg-white p-md-5 p-4 mb-5 border consform" data-aos="fade-up" data-aos-offset="100">
+                @using (Html.BeginForm("Create", "Consultation", FormMethod.Post))
+                {
+                    <h2 class="heading">Consult Us</h2>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label asp-for="FirstName">First Name</label> <br />
+                            <input asp-for="FirstName" />
+                            <br /> <span asp-validation-for="FirstName" class="error-text text-error"></span>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label asp-for="LastName">Last Name</label> <br />
+                            <input asp-for="LastName" />
+                            <br /> <span asp-validation-for="LastName" class="error-text text-error"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label asp-for="Email">Email</label> <br />
+                            <input asp-for="Email" />
+                            <br /> <span asp-validation-for="Email" class="error-text text-error"></span>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label asp-for="Phone">Phone</label> <br />
+                            <input asp-for="Phone" />
+                            <br /> <span asp-validation-for="Phone" class="error-text text-error"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label asp-for="ReasonForConsultation">Reason for Consultation</label> <br />
+                            @Html.DropDownListFor(m => m.ReasonForConsultation, Html.GetEnumSelectList<ConsType>())
+                            <br /> <span asp-validation-for="ReasonForConsultation" class="error-text text-error"></span>
+
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label asp-for="ConsultationType">Consultation Type</label> <br />
+                            @Html.DropDownListFor(m => m.ConsultationType, Html.GetEnumSelectList<Types>())
+                            <br /> <span asp-validation-for="ConsultationType" class="error-text text-error"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label asp-for="PackageType">Package Type</label> <br />
+                            @Html.DropDownListFor(m => m.PackageType, Html.GetEnumSelectList<ConsType>())
+                            <br /> <span asp-validation-for="PackageType" class="error-text text-error"></span>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label asp-for="PackageType">Preffered Method of Contact</label> <br />
+                            @Html.RadioButtonFor(m => m.ContactMethod, "Phone", new { id = "PMC_Phone" }) @Html.Label("Phone")
+                            @Html.RadioButtonFor(m => m.ContactMethod, "Email", new { id = "PMC_Email" }) @Html.Label("Email")
+                            <br /> <span asp-validation-for="ContactMethod" class="error-text text-error"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            @Html.Label("Availability Date") <br />
+                            <input type="date" asp-for="AvailabilityDate">
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label asp-for="Style">Preffered Style</label> <br />
+                            @Html.DropDownListFor(m => m.Style, Html.GetEnumSelectList<Style>())
+                            <br /> <span asp-validation-for="Style" class="error-text text-error"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            <label asp-for="Message">Additional Information</label> <br />
+                            @Html.TextAreaFor(m=>m.Message)
+                            <br /> <span asp-validation-for="Message" class="error-text text-error"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            @Html.CheckBox("Newsletter",true)
+                            @Html.Label("Signup for our newsletter")
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <input type="submit" value="Reserve Now" class="btn-sm btn-primary text-white font-weight-bold">
+                        </div>
+                    </div>
+                    @Html.ValidationSummary(false, " ", new {@class="text-error"})
+                }
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+            <div class="col-md-7">
+                <h2 class="heading" data-aos="fade-up">Thank you for choosing StyleSense!</h2>
+                <p data-aos="fade-up" data-aos-delay="100">Thank you for selecting StyleSense as your fashion partner. We are dedicated to helping you elevate your style and confidence. We appreciate your business and the opportunity to make a positive impact on your fashion choices. <br /> If you have any questions please contact us at: info@stylesense.com</p>
+            </div>
+        </div>
+    </div>
+</section>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

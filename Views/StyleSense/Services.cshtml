@@ -1,0 +1,221 @@
+﻿
+@{
+    ViewData["Title"] = "Services";
+    Layout = "~/Views/Shared/_AppLayout.cshtml";
+}
+<section class="site-hero inner-page overlay" style="background-image: url(/images/services_page.jpg)" data-stellar-background-ratio="0.5">
+    <div class="container">
+        <div class="row site-hero-inner justify-content-center align-items-center">
+            <div class="col-md-10 text-center" data-aos="fade">
+                <h1 class="heading mb-3">Our Services</h1>
+                <ul class="custom-breadcrumbs mb-4">
+                    <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li>&bullet;</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <a class="mouse smoothscroll" href="#next">
+        <div class="mouse-icon">
+            <span class="mouse-wheel"></span>
+        </div>
+    </a>
+</section>
+<!-- END section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-12 order-lg-1" data-aos="fade-up">
+                <h2 class="heading" style="text-align:center;">Discover Our Styling Services</h2>
+                <p class="mb-4">
+                    At StyleSense, we offer a range of personalized styling services to help you look and feel your best. Our experienced team of professional stylists are dedicated to helping you elevate your fashion sense and express your unique style. Our stylists are well-equipped with the latest fashion trends, industry expertise, and a keen eye for style to guide you in making the best fashion choices that suit your personality, lifestyle, and body type.
+
+                    With a focus on personalization, we take the time to understand your preferences, lifestyle, and fashion goals to curate styling solutions that are tailored to your unique needs. Our one-on-one consultations ensure that you receive individualized attention and guidance to help you achieve your desired style outcomes.
+
+                    At StyleSense, we are committed to providing exceptional service and creating a positive and empowering experience for our clients. Whether you're looking to update your wardrobe, revamp your personal style, or get expert advice on fashion choices, our team of skilled stylists are here to help you every step of the way.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="section bg-image overlay" style="background-image: url('/images/ourservices.jpg');" id="next">
+    <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+            <div class="col-md-7">
+                <h2 class="heading text-white" data-aos="fade">Our Services</h2>
+            </div>
+        </div>
+        <div class="tab-pane fade show active text-left" id="mains" role="tabpanel" aria-labelledby="mains-tab">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="food-menu mb-5">
+                        <h3 class="text-white"><a href="#" class="text-white">Personal Fashion Advice</a></h3>
+                        <p class="text-white text-opacity-7">Our expert stylists will provide you with personalized fashion advice to help you make the right fashion choices, whether it's for a special occasion or your everyday style.</p>
+                    </div>
+                    <div class="food-menu mb-5">
+                        <h3 class="text-white"><a href="#" class="text-white">Wardrobe Assessment</a></h3>
+                        <p class="text-white text-opacity-7">Let our stylists assess your current wardrobe and help you identify pieces that work well for your body type, lifestyle, and personal style, and provide recommendations for building a versatile and stylish wardrobe.</p>
+                    </div>
+                    <div class="food-menu mb-5">
+                        <h3 class="text-white"><a href="#" class="text-white">Color Analysis</a></h3>
+                        <p class="text-white text-opacity-7"> Our color analysis service will help you discover the colors that best complement your skin tone, hair color, and eye color, so you can make confident color choices in your clothing and accessories.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="food-menu mb-5">
+                        <h3 class="text-white"><a href="#" class="text-white">Closet Organization</a></h3>
+                        <p class="text-white text-opacity-7">Our professional stylists will help you declutter, organize, and optimize your closet space, making it easier for you to find and put together stylish outfits effortlessly.</p>
+                    </div>
+                    <div class="food-menu mb-5">
+                        <h3 class="text-white"><a href="#" class="text-white">Special Event Styling</a></h3>
+                        <p class="text-white text-opacity-7">Our special event styling service provides personalized outfit suggestions and styling advice for your next big occasion, whether it's a wedding, prom, or other special event, so you can look and feel your best.</p>
+                    </div>
+                    <div class="food-menu mb-5">
+                        <h3 class="text-white"><a href="#" class="text-white">Style Makeover</a></h3>
+                        <p class="text-white text-opacity-7"> If you're looking for a complete style transformation, our stylists can provide a comprehensive style makeover service. This may include a wardrobe overhaul, color analysis, hair and makeup consultation, and personalized style recommendations to help you revamp your entire look and elevate your personal style to new heights.</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div> <!-- .tab-pane -->
+    </div>
+    </div>
+    </div>
+    <section class="section">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-md-7">
+                    <h2 class="heading" data-aos="fade-up">Consultation Services</h2>
+                    <p data-aos="fade-up" data-aos-delay="100">Choose the consultation type that suits your needs and preferences. Our virtual, and in-person consultations offer personalized and professional advice on fashion, style, and wardrobe, tailored to your lifestyle and goals.</p>
+                    <a asp-controller="Consultation" asp-action="Create" class="btn btn-primary text-white py-2 mr-3">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section bg-light">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-md-7">
+                    <h2 class="heading" data-aos="fade-up">Our Packages</h2>
+                </div>
+            </div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col" class="text-dark"></th>
+                        <th scope="col" class="text-dark">Basic Package</th>
+                        <th scope="col" class="text-dark">Deluxe Package</th>
+                        <th scope="col" class="text-dark">Premium Package</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" class="text-dark">Personal Fashion Advice</th>
+                        <td>Get expert fashion advice to elevate your style</td>
+                        <td>Get personalized fashion advice to transform your wardrobe and confidence</td>
+                        <td>Get a comprehensive fashion consultation, including personal shopping and style recommendations</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-dark">Wardrobe Assessment</th>
+                        <td>Get a comprehensive review of your wardrobe to maximize your current style options</td>
+                        <td>Get a personalized wardrobe assessment and outfit recommendations based on your style and body type</td>
+                        <td>Get a full wardrobe overhaul, including a personalized shopping list and tips on how to maintain a curated closet</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-dark">Color Analysis</th>
+                        <td>Discover the colors that suit your skin tone and enhance your natural beauty</td>
+                        <td>Get a personalized color analysis to find your perfect color palette and update your wardrobe</td>
+                        <td>Get a comprehensive color analysis and learn how to incorporate your new palette into your makeup and accessories</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-dark">Closet Organization</th>
+                        <td>Get a professional organization of your closet to maximize space and efficiency</td>
+                        <td>Get a personalized closet organization based on your style, habits and space</td>
+                        <td>Get a comprehensive closet overhaul, including custom organization solutions and tips on how to maintain a clutter-free closet</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-dark">Special Event Syling</th>
+                        <td>Get a custom outfit recommendation for your special event based on your preferences and body type</td>
+                        <td>Enjoy a full styling session, including outfit recommendations, hair and makeup advice, and accessory suggestions</td>
+                        <td>Experience the ultimate special event styling package with a full styling session, hair and makeup services, and personal shopping assistance to help you find the perfect outfit and accessories</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-dark">Style Makeover</th>
+                        <td>Get a refreshed and updated look with a personalized style consultation</td>
+                        <td>Get a complete style makeover, including hair and makeup, to enhance your overall image</td>
+                        <td>Get a full style transformation, including a personalized shopping experience and ongoing style support</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</section>
+<section class="section py-5">
+    <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+            <div class="col-md-7">
+                <h2 class="heading" data-aos="fade-up">Customer Reviews</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="js-carousel-2 owl-carousel mb-5" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="testimonial text-center slider-item">
+                    <blockquote>
+
+                        <p>&ldquo;I absolutely love StyleSense! Their virtual styling sessions have transformed my wardrobe and boosted my confidence. The stylists are incredibly knowledgeable and attentive, and the personalized recommendations are spot on. Highly recommend!&rdquo;</p>
+                    </blockquote>
+                    <p><em>&mdash; Chloe Parker</em></p>
+                </div>
+
+                <div class="testimonial text-center slider-item">
+                    <blockquote>
+                        <p>&ldquo;I was impressed with the level of professionalism and expertise at StyleSense. The virtual styling session was a game-changer for me, and I now feel more fashionable and put-together than ever before. The convenience of their online services is unmatched, and the results speak for themselves&rdquo;</p>
+                    </blockquote>
+                    <p><em>&mdash; Lucas Mitchell</em></p>
+                </div>
+
+                <div class="testimonial text-center slider-item">
+                    <blockquote>
+
+                        <p>&ldquo;StyleSense is a fashion lover's dream come true! The quiz on their website helped me identify my personal style, and the styling tips and inspiration on their site have been invaluable. I've received so many compliments on my outfits since I started using StyleSense. It's like having a personal stylist in my pocket!&rdquo;</p>
+                    </blockquote>
+                    <p><em>&mdash; Ethan Hayes</em></p>
+                </div>
+
+                <div class="testimonial text-center slider-item">
+                    <blockquote>
+
+                        <p>&ldquo;As someone who's always struggled with fashion choices, StyleSense has been a game-changer. Their personalized styling recommendations are spot-on, and I've discovered new looks and combinations I never would have thought of. The website is easy to use, and the stylists are friendly and professional. I highly recommend StyleSense to anyone looking to up their style game!&rdquo;</p>
+                    </blockquote>
+                    <p><em>&mdash; Olivia Harper</em></p>
+                </div>
+
+                <div class="testimonial text-center slider-item">
+
+                    <blockquote>
+                        <p>&ldquo;StyleSense has been a game-changer for my wardrobe. The virtual styling sessions are fun, interactive, and packed with valuable fashion tips and advice. The stylists are friendly and skilled, and the personalized recommendations have helped me revamp my style and feel more confident in my outfits. I can't recommend StyleSense enough!&rdquo;</p>
+                    </blockquote>
+                    <p><em>&mdash; Liam Morgan</em></p>
+                </div>
+
+                <div class="testimonial text-center slider-item">
+                    <blockquote>
+
+                        <p>&ldquo;The stylist took the time to understand my personal style and provided tailored recommendations that suited my body shape and lifestyle. The outfit suggestions were on point, and I received numerous compliments on my new looks. I highly recommend Stylesense to anyone looking to elevate their fashion game!&rdquo;</p>
+                    </blockquote>
+                    <p><em>&mdash; Ava Thompson</em></p>
+                </div>
+
+            </div>
+            <!-- END slider -->
+        </div>
+
+    </div>
+</section>
+
